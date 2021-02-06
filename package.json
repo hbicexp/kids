@@ -1,0 +1,39 @@
+{
+  "name": "hs",
+  "description": "Huabin Studio Projects",
+  "version": "1.0.0",
+  "author": "Fred Wang",
+  "private": true,
+  "workspaces": [
+    "web",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "yarn workspace yhzly-www run serve",
+    "build": "yarn workspace yhzly-www run build"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.16.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-html": "^6.1.1",
+    "eslint-plugin-prettier": "^3.3.0",
+    "eslint-plugin-vue": "^7.3.0",
+    "eslint-webpack-plugin": "^2.4.1",
+    "husky": "^4.3.7",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.2.1",
+    "stylelint": "^13.7.2",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-recess-order": "^2.3.0",
+    "stylelint-scss": "^3.18.0",
+    "stylelint-webpack-plugin": "^2.1.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": [
+        "eslint"
+      ]
+    }
+  }
+}
