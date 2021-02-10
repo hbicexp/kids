@@ -1,6 +1,9 @@
 <template>
   <div id="footer">
-    <div class="icp">津ICP备2021000382号</div>
+    <div class="icp">
+      CopyRights@野孩子乐园
+      <a href="http://beian.miit.gov.cn/">津ICP备2021000382-1号</a>
+    </div>
     <div class="profile"></div>
   </div>
 </template>

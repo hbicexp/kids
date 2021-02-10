@@ -22,36 +22,47 @@
     height: 100%;
     padding: 0;
     margin: 0;
+    color: #333;
+    background: #f3f3f3;
+  }
+
+  a,
+  a:hover {
+    color: #333;
+    text-decoration: none;
   }
 
   #header {
     position: relative;
     width: 1920px;
-    height: 528px;
+    height: 347px;
     padding: 0;
     margin: 0 auto;
-    background-image: url(../../public/images/header.jpg);
+    background: url(../../public/images/header.jpg);
 
     .menu {
       position: absolute;
       top: 24px;
-      left: 900px;
+      left: 990px;
       display: flex;
-      width: 300px;
+      width: 340px;
 
       li {
         flex: 1;
-        padding: 5px;
-        font-size: 24px;
-        color: #333;
+        padding: 8px 0;
+        margin-right: 5px;
+        font-size: 18px;
+        color: #000;
         text-align: center;
         text-decoration: none;
         list-style: none;
+        background-color: rgba(255, 255, 255, 0.25);
         border-radius: 5px;
         transition: 0.3s;
 
         &:hover {
-          background-color: rgba(0, 0, 0, 0.1);
+          color: #eee;
+          background-color: rgba(0, 0, 0, 0.25);
         }
       }
     }
